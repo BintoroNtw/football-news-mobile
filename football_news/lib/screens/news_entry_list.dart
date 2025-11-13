@@ -64,6 +64,7 @@ class _NewsEntryListPageState extends State<NewsEntryListPage> {
                 itemBuilder: (_, index) => NewsEntryCard(
                   news: snapshot.data![index],
                   onTap: () {
+                    // Show a snackbar when news card is clicked
                     Navigator.push(
                       context,
                       MaterialPageRoute(

@@ -51,7 +51,6 @@ class ItemCard extends StatelessWidget {
           // Add this after your previous if statements
           else if (item.name == "Logout") {
             final response = await request.logout(
-
                 "http://localhost:8000/auth/logout/");
             String message = response["message"];
             if (context.mounted) {
